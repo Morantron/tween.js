@@ -119,6 +119,10 @@ TWEEN.Tween = function ( object ) {
 
 	}
 
+	this.isPlaying = function () {
+		return _isPlaying;
+	};
+
 	this.to = function ( properties, duration ) {
 
 		if ( duration !== undefined ) {
